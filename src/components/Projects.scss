@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.project-div {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: crimson;
+    color: snow;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1500px) {
+    .project-div {
+        flex-direction: column;
+    }
+}

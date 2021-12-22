@@ -3,7 +3,7 @@ import './Home.scss';
 import Card from './Card';
 import image from '../assets/myImage.jpg';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { init } from 'ityped'
+import { init } from 'ityped';
 
 export default function App() {
 
@@ -36,13 +36,13 @@ export default function App() {
             <div className='about-div'>
                 <a href="/projects" className='about-div-link'>Projects</a>
                 <a href="/#" className='about-div-link'>Resume</a>
-                <a href="/#" className='about-div-link'>Blog</a>
-                <a href="/#" className='about-div-link'>Contact</a>
+                <a href="/experience" className='about-div-link'>About</a>
+                <a href="/contact" className='about-div-link'>Contact</a>
             </div>
             <hr />
             <div className='contact-links'>
                 <a href="https://github.com/DaffyTheDuck" target={"_blank"} className='contact-links-div'><FaGithub size={42}/></a>
-                <a href="/#" className='contact-links-div'><FaLinkedinIn size={42}/></a>
+                <a href="https://www.linkedin.com/in/daffyduck/" target={"_blank"} className='contact-links-div'><FaLinkedinIn size={42}/></a>
             </div>
             </Card>
         </div>
