@@ -35,7 +35,7 @@ export default function App() {
             <p><span>Programmer,</span> Gamer and Tech Geek</p>
             <div className='about-div'>
                 <a href="/projects" className='about-div-link'>Projects</a>
-                <a href="/#" className='about-div-link'>Resume</a>
+                <a href="https://nbviewer.org/github/DaffyTheDuck/Personal-Portfolio-Card/blob/main/src/assets/resume.pdf" target={'_blank'} className='about-div-link'>Resume</a>
                 <a href="/experience" className='about-div-link'>About</a>
                 <a href="/contact" className='about-div-link'>Contact</a>
             </div>
