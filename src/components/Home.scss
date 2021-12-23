@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F6D7A7;
+    background-color: #79B4B7;
     height: 100%;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -32,12 +32,12 @@
             border-radius: 50px;
             margin-top: 50%;
             margin-bottom: 50%;
-            background: crimson;
+            background: #FEFBF3;
 
-            img {
-                width: 180px;
-                height: 180px;
-                border-radius: 50px;
+            .my-image {
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
                 margin: auto auto 60px auto;
             }
 
@@ -50,13 +50,13 @@
                 color: #2C272E;
 
                 span {
-                    color: snow;
+                    color: crimson;
                     font-weight: bolder;
                 }
             }
 
             .main-heading {
-                font-size: 3rem;
+                font-size: 2.5rem;
                 font-weight: bold;
                 margin-bottom: 40px;
                 .dynamic-text {
@@ -102,7 +102,7 @@
 
             hr {
                 width: 100%;
-                border: 1px solid white;
+                border: 1px solid #2C272E;
                 margin-bottom: 20px;
             }
 
@@ -134,14 +134,15 @@
         height: auto;
         .main-card {
             width: auto;
+            position: relative;
             .intro-div {
                 .main-heading {
                     font-size: 2rem;
                 }
-                img {
-                    width: 120px;
-                    height: 120px;
-                    border-radius: 30px;
+                .my-image {
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 50%;
                     margin-bottom: 40px;
                 }
                 .about-div {

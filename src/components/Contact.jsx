@@ -33,9 +33,9 @@ export default function Contact() {
 
     return (
         <div className='main-contact-div'>
-            <h1>Get In Touch</h1>
+            <p>Get In Touch!</p>
             <hr />
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='message-form'>
                 <div className='name-input'>
                     <input type={'text'} placeholder='Name' onChange={name_handler} value={name}/>
                 </div>

@@ -8,7 +8,11 @@
     width: 100%;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 3%;
+    margin-top: 1%;
+
+    p {
+        font-size: 3rem;
+    }
 
     hr {
         width: 20%;
@@ -16,121 +20,123 @@
         margin-top: 1%;
     }
 
-    .name-input {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        margin-top: 5%;
-        margin-bottom: 1%;
+    .message-form {
 
-        input {
+        .name-input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 100%;
-            height: 10%;
-            border: none;
-            border-bottom: 1px solid #000;
-            margin-top: 1%;
+            height: 100%;
+            margin-top: 5%;
             margin-bottom: 1%;
-            font-size: 1.5rem;
-            font-family: inherit;
-            text-align: center;
-
-            &:focus {
-                outline: none;
-            }
-
-            &:focus::placeholder {
-                color: transparent;
+    
+            input {
+                width: 100%;
+                height: 10%;
+                border: none;
+                border-bottom: 1px solid #000;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                font-size: 1.5rem;
+                font-family: inherit;
+                text-align: center;
+    
+                &:focus {
+                    outline: none;
+                }
+    
+                &:focus::placeholder {
+                    color: transparent;
+                }
             }
         }
-    }
-
-    .email-input {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        margin-top: 5%;
-        margin-bottom: 1%;
-
-        input {
+    
+        .email-input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 100%;
-            height: 10%;
-            border: none;
-            border-bottom: 1px solid #000;
-            margin-top: 1%;
+            height: 100%;
+            margin-top: 5%;
             margin-bottom: 1%;
-            font-size: 1.5rem;
-            font-family: inherit;
-            text-align: center;
-
-            &:focus {
-                outline: none;
-            }
-
-            &:focus::placeholder {
-                color: transparent;
+    
+            input {
+                width: 100%;
+                height: 10%;
+                border: none;
+                border-bottom: 1px solid #000;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                font-size: 1.5rem;
+                font-family: inherit;
+                text-align: center;
+    
+                &:focus {
+                    outline: none;
+                }
+    
+                &:focus::placeholder {
+                    color: transparent;
+                }
             }
         }
-    }
-
-    .message-input {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        margin-top: 5%;
-        margin-bottom: 1%;
-
-        textarea {
+    
+        .message-input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 100%;
-            height: 10%;
-            border-bottom: 1px solid #000;
-            margin-top: 1%;
+            height: 100%;
+            margin-top: 5%;
             margin-bottom: 1%;
-            font-size: 1.5rem;
-            font-family: inherit;
-
-            &:focus {
-                outline: none;
-            }
-
-            &:focus::placeholder {
-                color: transparent;
+    
+            textarea {
+                width: 100%;
+                height: 10%;
+                border-bottom: 1px solid #000;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                font-size: 1.5rem;
+                font-family: inherit;
+    
+                &:focus {
+                    outline: none;
+                }
+    
+                &:focus::placeholder {
+                    color: transparent;
+                }
             }
         }
-    }
-
-    .submit-button {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        margin-top: 5%;
-        margin-bottom: 1%;
-
-        button {
+    
+        .submit-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 100%;
-            height: 10%;
-            border: none;
-            border-bottom: 1px solid #000;
-            margin-top: 1%;
+            height: 100%;
+            margin-top: 5%;
             margin-bottom: 1%;
-            font-size: 1.5rem;
-            font-family: inherit;
-            background-color: crimson;
-            color: #fff;
-
-            &:focus {
-                outline: none;
+    
+            button {
+                width: 50%;
+                height: 10%;
+                border: none;
+                border-bottom: 1px solid #000;
+                margin-bottom: 1%;
+                font-size: 1.5rem;
+                font-family: inherit;
+                background-color: crimson;
+                color: #fff;
+    
+                &:focus {
+                    outline: none;
+                }
             }
         }
     }
@@ -140,39 +146,47 @@
     .main-contact-div {
         margin-top: 5%;
 
+        p {
+            font-size: 2rem;
+        }
+
         hr {
             width: 50%;
             margin-bottom: 20px;
         }
 
-        .name-input {
-            input {
-                font-size: 1.2rem;
-                width: 70%;
-                margin-bottom: 20px;
+        .message-form {
+            .name-input {
+                input {
+                    font-size: 1.2rem;
+                    width: 70%;
+                    margin-bottom: 20px;
+                }
             }
-        }
-
-        .email-input {
-            input {
-                font-size: 1.2rem;
-                width: 70%;
-                margin-bottom: 20px;
+    
+            .email-input {
+                input {
+                    font-size: 1.2rem;
+                    width: 70%;
+                    margin-bottom: 20px;
+                }
             }
-        }
-
-        .message-input {
-            textarea {
-                font-size: 1.2rem;
-                width: 70%;
-                height: 5%;
+    
+            .message-input {
+                textarea {
+                    font-size: 1.2rem;
+                    width: 90%;
+                    height: 5%;
+                }
             }
-        }
-
-        .submit-button {
-            button {
-                font-size: 1.2rem;
-                width: 70%;
+    
+            .submit-button {
+                button {
+                    font-size: 1.2rem;
+                    width: 50%;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
             }
         }
     }
