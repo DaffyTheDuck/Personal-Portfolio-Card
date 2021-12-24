@@ -6,9 +6,9 @@ import emailjs from 'emailjs-com';
 export default function Contact() {
 
     // consts for emailjs
-    const SERVICE_ID = 'service_al6hsjd';
-    const TEMPLATE_ID = 'template_i96pekp';
-    const USER_ID = 'user_frpgUAY9j4zY6mpnH0zoN';
+    const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+    const USER_ID = process.env.REACT_APP_USER_ID;
 
     const [info, setInfo] = useState({
         from_name: '',
