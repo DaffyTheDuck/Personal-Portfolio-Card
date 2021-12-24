@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import './Experience.scss';
+import './About.scss';
 import { init } from 'ityped';
 
 export default function Experience() {

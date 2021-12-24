@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import Experience from './components/Experience';
+import About from './components/About';
 import { Route, Routes } from 'react-router-dom';
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/experience' element={<Experience />} />
+        <Route path='/about' element={<About/>} />
       </Routes>
     </>
   )

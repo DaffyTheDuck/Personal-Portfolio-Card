@@ -1,54 +1,74 @@
 import React, {useState} from 'react';
 import './Contact.scss';
+import Card from './Card';
+import emailjs from 'emailjs-com';
 
 export default function Contact() {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    // consts for emailjs
+    const SERVICE_ID = 'service_al6hsjd';
+    const TEMPLATE_ID = 'template_i96pekp';
+    const USER_ID = 'user_frpgUAY9j4zY6mpnH0zoN';
 
-    const handleSubmit = (e) => {
+    const [info, setInfo] = useState({
+        from_name: '',
+        reply_to: '',
+        message: '',
+    });
+
+    const nameHandler = (e) => {
+        setInfo({
+            ...info,
+            from_name: e.target.value
+        });
+    }
+
+    const emailHandler = (e) => {
+        setInfo({
+            ...info,
+            reply_to: e.target.value
+        });
+    }
+
+    const messageHandler = (e) => {
+        setInfo({
+            ...info,
+            message: e.target.value
+        });
+    }
+
+    function submitForm(e) {
         e.preventDefault();
-    }
-
-    const submitFinalForm = () => {
-        alert('Thanks for reaching out! I will get back to you as soon as possible.');
-        console.log(name, email, message);
-        setEmail('');
-        setName('');
-        setMessage('');
-    }
-
-    const name_handler = (e) => {
-        setName(e.target.value);
-    }
-
-    const email_handler = (e) => {
-        setEmail(e.target.value);
-    }
-
-    const message_handler = (e) => {
-        setMessage(e.target.value);
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, info, USER_ID).then(
+            (response) => {
+                console.log('SUCCESS!', response.status, response.text);
+            },
+            (err) => {
+                console.log('FAILED...', err);
+            }
+        );
+        setInfo({
+            from_name: '',
+            reply_to: '',
+            message: ''
+        });
     }
 
     return (
-        <div className='main-contact-div'>
-            <p>Get In Touch!</p>
-            <hr />
-            <form onSubmit={handleSubmit} className='message-form'>
-                <div className='name-input'>
-                    <input type={'text'} placeholder='Name' onChange={name_handler} value={name}/>
+        <div className='parent-div-contact'>
+            <Card className="contact-card">
+                <h1>Get In Touch!</h1>
+                <div className='primary-inputs'>
+                    <input placeholder='Your Name' value={info.from_name} type={'text'} onChange={nameHandler}/>
+                    <input type={'email'} placeholder='Your Email' value={info.reply_to} onChange={emailHandler}/>
                 </div>
-                <div className='email-input'>
-                    <input type={'email'} placeholder='Email' onChange={email_handler} value={email}/>
+                <div className='textarea-input'>
+                    <textarea placeholder='Your Message' value={info.message} onChange={messageHandler}/>
                 </div>
-                <div className='message-input'>
-                    <textarea placeholder='Message' rows={'20'} cols={'50'} onChange={message_handler} value={message}></textarea>
+                <div className='buttons'>
+                    <button onClick={submitForm}>Send</button>
                 </div>
-                <div className='submit-button'>
-                    <button type='submit' onClick={submitFinalForm}>Submit</button>
-                </div>
-            </form>
+            </Card>
         </div>
     )
 }
