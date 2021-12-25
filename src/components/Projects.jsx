@@ -1,8 +1,8 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import './Projects.scss';
 import { init } from 'ityped';
 
-export default function Projects() {
+export default function Experience() {
 
     const textRef = useRef();
 
@@ -20,8 +20,8 @@ export default function Projects() {
     }, []);
 
     return (
-        <div className='project-div'>
+        <div className='exp_div'>
             <h1><span ref={textRef}></span></h1>
         </div>
-    );
+    )
 }

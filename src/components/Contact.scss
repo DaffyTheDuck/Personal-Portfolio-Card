@@ -11,8 +11,7 @@
     font-family: 'Montserrat', sans-serif;
     background-image: url('../assets/bg_updated.jpg');
     background-position: center;
-
-
+    background-size: cover;
 
     .contact-card {
         display: flex;
@@ -93,6 +92,7 @@
                 font-size: 1.2rem;
                 background: transparent;
                 color: snow;
+                text-align: center;
 
                 &::placeholder {
                     color: snow;
