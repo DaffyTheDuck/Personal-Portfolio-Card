@@ -23,6 +23,8 @@ export default function App() {
         })
     }, []);
 
+    const resume_link = "https://nbviewer.org/github/DaffyTheDuck/Personal-Portfolio-Card/blob/main/src/assets/resume.pdf"
+
     return (
         <div className='main-div'>
             <div className='main-card'>
@@ -35,7 +37,7 @@ export default function App() {
                     <p><span>Programmer,</span> Gamer and Tech Geek</p>
                     <div className='about-div'>
                         <a href="/projects" className='about-div-link'>Projects</a>
-                        <a href="https://nbviewer.org/github/DaffyTheDuck/Personal-Portfolio-Card/blob/083cc1db390624868f78cfcb25df8d3a15dfe849/src/assets/resume.pdf" target={'_blank'} 
+                        <a href={resume_link} target={'_blank'} 
                             rel="noopener noreferrer"
                             className='about-div-link'>Resume</a>
                         <a href="/#" className='about-div-link'>Blog</a>
