@@ -41,10 +41,10 @@ export default function Contact() {
         e.preventDefault();
         emailjs.send(SERVICE_ID, TEMPLATE_ID, info, USER_ID).then(
             (response) => {
-                console.log('SUCCESS!', response.status, response.text);
+                alert('Thank You!, I Will Get Back To You As Soon As Possible');
             },
             (err) => {
-                console.log('FAILED...', err);
+                alert('Ugh!, I Guess Something Went Wrong');
             }
         );
         setInfo({
