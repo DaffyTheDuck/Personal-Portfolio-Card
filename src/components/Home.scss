@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #79B4B7;
+    background-color: black;
     height: 100%;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -19,6 +19,7 @@
         padding: 20px;
         height: 100vh;
         margin: 0;
+        z-index: 1;
 
         .intro-div {
             display: flex;
@@ -31,7 +32,9 @@
             border-radius: 50px;
             margin-top: 50%;
             margin-bottom: 50%;
-            background: #FEFBF3;
+            background-color: rgba(255, 255, 255, .15);  
+            backdrop-filter: blur(15px);
+            z-index: 1;
 
             .my-image {
                 width: 170px;
@@ -46,7 +49,8 @@
                 padding: 5px;
                 font-weight: bold;
                 word-wrap: break-word;
-                color: #2C272E;
+                // color: #2C272E;
+                color: snow;
 
                 span {
                     color: crimson;
@@ -59,13 +63,15 @@
                 font-weight: bold;
                 margin-bottom: 40px;
                 .dynamic-text {
-                    color: #2C272E
+                    // color: #2C272E
+                    color: snow;
                 }
             }
 
             .ityped-cursor {
                 animation: blink 1s infinite;
-                color: #2C272E;
+                // color: #2C272E;
+                color: snow;
             }
 
             @keyframes blink {
@@ -101,7 +107,8 @@
 
             hr {
                 width: 100%;
-                border: 1px solid #2C272E;
+                // border: 1px solid #2C272E;
+                border: 1px solid snow;
                 margin-bottom: 20px;
             }
 
