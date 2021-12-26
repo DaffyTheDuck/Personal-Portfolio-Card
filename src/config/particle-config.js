@@ -1,7 +1,7 @@
 const PConfig = {
   particles: {
     number: {
-      value: 30,
+      value: 15,
       density: {
         enable: true,
         value_area: 473.4885849793636
@@ -47,7 +47,7 @@ const PConfig = {
     },
     line_linked: {
       enable: true,
-      distance: 150,
+      distance: 250,
       color: "#ffffff",
       opacity: 0.4,
       width: 1
