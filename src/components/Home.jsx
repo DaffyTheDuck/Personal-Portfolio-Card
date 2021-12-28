@@ -4,6 +4,7 @@ import Card from './Card';
 import myImage from '../assets/myImage.jpg';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { init } from 'ityped';
+import { Link } from 'react-router-dom'
 
 export default function App() {
 
@@ -36,12 +37,12 @@ export default function App() {
                     <p>First Year <span>Computer Engineering Student,</span></p>
                     <p><span>Programmer,</span> Gamer and Tech Geek</p>
                     <div className='about-div'>
-                        <a href="/projects" className='about-div-link'>Projects</a>
+                        <Link to="/projects" className='about-div-link'>Projects</Link>
                         <a href={resume_link} target={'_blank'} 
                             rel="noopener noreferrer"
                             className='about-div-link'>Resume</a>
                         <a href="/#" className='about-div-link'>Blog</a>
-                        <a href="/contact" className='about-div-link'>Contact</a>
+                        <Link to="/contact" className='about-div-link'>Contact</Link>
                     </div>
                     <hr />
                     <div className='contact-links'>
