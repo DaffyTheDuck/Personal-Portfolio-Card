@@ -37,21 +37,37 @@ export default function Contact() {
         });
     }
 
-    function submitForm(e) {
-        e.preventDefault();
-        emailjs.send(SERVICE_ID, TEMPLATE_ID, info, USER_ID).then(
-            (response) => {
-                alert('Thank You!, I Will Get Back To You As Soon As Possible');
-            },
-            (err) => {
-                alert('Ugh!, I Guess Something Went Wrong');
-            }
-        );
+    function submitForm() {
+        // emailjs.send(SERVICE_ID, TEMPLATE_ID, info, USER_ID).then(
+        //     (response) => {
+        //         alert('Thank You!, I Will Get Back To You As Soon As Possible');
+        //     },
+        //     (err) => {
+        //         alert('Ugh!, I Guess Something Went Wrong');
+        //     }
+        // );
+        // setInfo({
+        //     from_name: '',
+        //     reply_to: '',
+        //     message: ''
+        // });
         setInfo({
             from_name: '',
             reply_to: '',
             message: ''
         });
+        if (info.from_name === '' || info.reply_to === '' || info.message === '') {
+            alert("Hey! All Fields Are Required");
+        } else {
+            emailjs.send(SERVICE_ID, TEMPLATE_ID, info, USER_ID).then(
+                (response) => {
+                    alert('Thank You!, I Will Get Back To You As Soon As Possible');
+                },
+                (err) => {
+                    alert('Ugh!, I Guess Something Went Wrong');
+                }
+            );
+        }
     }
 
     return (
