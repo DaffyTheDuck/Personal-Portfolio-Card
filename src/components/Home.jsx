@@ -46,8 +46,12 @@ export default function App() {
                     </div>
                     <hr />
                     <div className='contact-links'>
-                        <a href="https://github.com/DaffyTheDuck" target={"_blank"} rel="noopener noreferrer" className='contact-links-div'><FaGithub size={42}/></a>
-                        <a href="https://www.linkedin.com/in/daffyduck/" target={"_blank"} rel="noopener noreferrer" className='contact-links-div'><FaLinkedinIn size={42}/></a>
+                        <a href="https://github.com/DaffyTheDuck" 
+                            target={"_blank"} rel="noopener noreferrer" 
+                            className='contact-links-div'><FaGithub size={42}/></a>
+                        <a href="https://www.linkedin.com/in/daffyduck/" 
+                            target={"_blank"} rel="noopener noreferrer" 
+                            className='contact-links-div'><FaLinkedinIn size={42}/></a>
                     </div>
                 </Card>
             </div>
