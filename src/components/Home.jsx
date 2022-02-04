@@ -41,7 +41,7 @@ export default function App() {
                         <a href={resume_link} target={'_blank'} 
                             rel="noopener noreferrer"
                             className='about-div-link'>Resume</a>
-                        <a href="/#" className='about-div-link'>Blog</a>
+                        <a href="/#" className='about-div-link'>Skills</a>
                         <Link to="/contact" className='about-div-link'>Contact</Link>
                     </div>
                     <hr />
